@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normilize.css" />
+    <link rel="icon" href="favicon-16x16.png" type="image/png" />
+    <title>FFA</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        From Fusion Art - сервис генерирования изображений
+      </h1>
+    </header>
+    <div class="generation">
+      <input
+        class="generation__input"
+        type="text"
+        placeholder="Введите запрос"
+      />
+      <button class="generation__submit-btn">Сгенерировать</button>
+    </div>
+
+    <div class="result">
+      <img class="result__image" alt="Generated image" src="./default.png" />
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
