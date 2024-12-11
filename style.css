@@ -1,3 +1,5 @@
+@import url(../fonts/web/inter.css);
+
 html,
 body {
   font-family: "Inter";
@@ -129,6 +131,53 @@ body {
 @media screen and (max-width: 767px) {
   .header__title {
     font-size: 2.2em;
+  }
+
+  .generation {
+    margin: 50px auto 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .generation__input {
+    font-size: 0.7em;
+    width: 100%;
+  }
+
+  .generation__input::placeholder {
+    font-size: 0.7em;
+  }
+
+  .generation__submit-btn {
+    font-size: 0.7em;
+    width: 30%;
+    margin: 30px auto 0 auto;
+    height: 50px;
+  }
+
+  .result {
+    margin: 50px auto 0 auto;
+    width: 70%;
+    display: flex;
+  }
+
+  .result__image {
+    max-height: min(
+      70vw,
+      calc(100vh - 20vh - 50px - 50px - 50px - 50px - 30px - 10px)
+    );
+    max-width: min(
+      70vw,
+      calc(100vh - 20vh - 50px - 50px - 50px - 50px - 30px - 10px)
+    );
+    margin: 0 auto 0 auto;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .header__title {
+    font-size: 1.5em;
   }
 
   .generation {
