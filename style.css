@@ -222,9 +222,9 @@ body {
   }
 }
 
-@media screen and ((max-width: 400px) and (max-height: 620px)) {
+@media screen and ((max-width: 420px) and (max-height: 900px)) {
   .header__title {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .generation {
