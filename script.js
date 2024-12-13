@@ -37,3 +37,12 @@ async function generateImage() {
 const generateButton = document.querySelector(".generation__submit-btn");
 
 generateButton.addEventListener("click", generateImage);
+
+const loadButton = document.querySelector(".result__load");
+loadButton.addEventListener("click", () => {
+  const image = document.querySelector(".result__image"); // Получаем элемент изображения
+  const link = document.createElement("a"); // Создаем ссылку
+  link.href = image.src; // Указываем ссылку на изображение
+  link.download = "generated_image.png"; // Имя файла для загрузки
+  link.click(); // Симулируем клик для скачивания
+});
