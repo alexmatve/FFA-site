@@ -1,7 +1,8 @@
 async function generateImage() {
-  const API_URL =
-    "https://api.deepinfra.com/v1/inference/prompthero/openjourney";
-  const API_KEY = "PTlSMmC29tlVH0pkbVxeoTCDf83P3cfC";
+  // const API_URL =
+  //   "https://api.deepinfra.com/v1/inference/prompthero/openjourney";
+  const API_URL = "https://api.deepinfra.com/v1/inference/stabilityai/sdxl-turbo"
+  const API_KEY = "7uyIEwFsIOPvobJL0l8eQzKrOHgMRHdj";
 
   try {
     const prompt_text = document.querySelector(".generation__input");
